@@ -33,6 +33,19 @@ footer.bot img{height:40px}
 .btn.coral{background:var(--coral)}
 .cue{background:var(--yellow);border:1.5px solid var(--gold);border-radius:10px;padding:10px 16px;font-style:italic;color:var(--navy);font-size:18px;text-align:center;margin-top:14px}
 svg.qs{flex:none}
+/* intro */
+.askb{background:#FBE4E1;border:1.5px solid var(--coral);border-radius:14px;padding:16px 22px;font-size:26px;font-style:italic;color:var(--navy);text-align:center;margin-bottom:18px}
+.mtn{display:flex;gap:26px;align-items:center;margin-bottom:18px}
+.mtn svg{flex:none;width:380px;max-width:45%;height:auto}
+.mtn p{font-size:26px;color:var(--navy);margin:0;line-height:1.4}
+.aibox{background:#fff;border:2px solid var(--navy);border-radius:14px;padding:14px 22px;font-size:21px;color:var(--navy)}
+.aibox .t{font-family:'Quicksand';font-weight:700;font-size:22px;margin-bottom:4px}
+.aibox .line{font-weight:700;color:var(--teal);margin-top:6px;font-size:23px}
+.minerhead{font-family:'Quicksand';font-weight:700;font-size:30px;color:var(--navy);text-align:center;margin:6px 0 18px}
+.mrow{display:flex;gap:18px;align-items:center;max-width:720px;margin:0 auto 12px;font-size:26px;color:var(--navy)}
+.mrow .dl{width:64px;height:64px;font-size:34px;flex:none}
+.minerclose{max-width:820px;margin:18px auto 0;background:var(--yellow);border:1.5px solid var(--gold);border-radius:12px;padding:12px 18px;font-size:22px;color:var(--navy);text-align:center}
+.tester{max-width:820px;margin:12px auto 0;background:var(--lblue);border:1.5px solid var(--teal);border-radius:12px;padding:12px 18px;font-size:22px;color:var(--navy);text-align:center;font-family:'Quicksand';font-weight:700}
 /* strip */
 .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
 .strip .si{display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;font-size:16px;color:var(--navy);min-height:64px}
@@ -83,10 +96,11 @@ svg.qs{flex:none}
 .saytxt{font-family:'Quicksand';font-weight:700;font-size:22px;color:var(--navy);text-align:center;margin:6px 0 10px}
 .peek{user-select:none;-webkit-user-select:none;touch-action:none}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-/* model */
+/* model + intro reveals */
 .mgrid{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
-.callout{border-radius:12px;padding:14px 16px;font-size:19px;color:var(--navy);margin-bottom:12px;opacity:0;transform:translateY(6px);transition:all .35s}
-.callout.show{opacity:1;transform:none}
+.callout{border-radius:12px;padding:14px 16px;font-size:19px;color:var(--navy);margin-bottom:12px}
+.rv{opacity:0;transform:translateY(6px);transition:all .35s}
+.rv.show{opacity:1;transform:none}
 .c1{background:var(--lblue);border:1.5px solid var(--teal)}.c2{background:var(--yellow);border:1.5px solid var(--gold)}.c3{background:#FBE4E1;border:1.5px solid var(--coral)}
 .hl-later{transition:background .35s}
 .hl-later.show{background:#FFF200;font-weight:700}
@@ -123,6 +137,7 @@ svg.qs{flex:none}
 #tutor .stat{display:flex;gap:8px;flex-wrap:wrap}
 #tutor .stat div{background:#f4f6f9;border-radius:8px;padding:6px 10px;font-weight:700}
 #tutor .cur{background:var(--yellow);border-radius:8px;padding:8px 10px}
+#tutor .script{background:#f4f6f9;border-left:4px solid var(--teal);border-radius:6px;padding:8px 10px;font-size:13px;line-height:1.45}
 #tbtnOpen{position:fixed;right:10px;bottom:62px;width:26px;height:26px;border-radius:50%;border:1px solid #d5dae3;background:#fff;color:#c5cad4;font-size:13px;cursor:pointer;z-index:40;opacity:.25}
 #toast{position:fixed;left:50%;top:84px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 18px;border-radius:10px;font-family:'Quicksand';font-weight:700;opacity:0;transition:opacity .3s;z-index:60;pointer-events:none}
 #toast.show{opacity:1}
@@ -140,6 +155,21 @@ svg.qs{flex:none}
   <h2>DIGS Pilot: Octopuses</h2><p id="startSess">Session 1</p>
 </div></section>
 
+<section class="screen" data-step="why">
+  <div class="askb">When a teacher says “go research it,” what happens for you?</div>
+  <div class="mtn rv" data-r="1"><svg viewBox="0 0 400 210" width="380"  role="img" aria-label="A mountain of rock with a few gems inside"><polygon points="0,205 75,95 118,128 190,28 262,112 312,72 400,205" fill="#c9ced8" stroke="#6b7080" stroke-width="3" stroke-linejoin="round"/><circle cx="110" cy="150" r="6" fill="#aeb5c2"/><circle cx="150" cy="120" r="4" fill="#aeb5c2"/><circle cx="200" cy="90" r="5" fill="#aeb5c2"/><circle cx="230" cy="140" r="7" fill="#aeb5c2"/><circle cx="280" cy="130" r="4" fill="#aeb5c2"/><circle cx="170" cy="165" r="5" fill="#aeb5c2"/><circle cx="310" cy="160" r="6" fill="#aeb5c2"/><circle cx="90" cy="180" r="4" fill="#aeb5c2"/><circle cx="250" cy="175" r="5" fill="#aeb5c2"/><circle cx="195" cy="130" r="3" fill="#aeb5c2"/><polygon points="127.7,136.8 152.3,136.8 160.2,146.5 140.0,168.5 119.8,146.5" fill="#B8860B" stroke="#323C6B" stroke-width="1.3" stroke-linejoin="round"/><polyline points="119.8,146.5 160.2,146.5" fill="none" stroke="#323C6B" stroke-width="0.9"/><polyline points="133.8,136.8 131.2,146.5 140.0,168.5 148.8,146.5 146.2,136.8" fill="none" stroke="#323C6B" stroke-width="0.9" stroke-linejoin="round"/><polygon points="234.4,99.6 255.6,99.6 262.5,108.0 245.0,127.0 227.5,108.0" fill="#3A7D8C" stroke="#323C6B" stroke-width="1.2" stroke-linejoin="round"/><polyline points="227.5,108.0 262.5,108.0" fill="none" stroke="#323C6B" stroke-width="0.8"/><polyline points="239.7,99.6 237.4,108.0 245.0,127.0 252.6,108.0 250.3,99.6" fill="none" stroke="#323C6B" stroke-width="0.8" stroke-linejoin="round"/><polygon points="292.5,146.8 311.5,146.8 317.6,154.3 302.0,171.3 286.4,154.3" fill="#E66B5D" stroke="#323C6B" stroke-width="1.2" stroke-linejoin="round"/><polyline points="286.4,154.3 317.6,154.3" fill="none" stroke="#323C6B" stroke-width="0.8"/><polyline points="297.2,146.8 295.2,154.3 302.0,171.3 308.8,154.3 306.8,146.8" fill="none" stroke="#323C6B" stroke-width="0.8" stroke-linejoin="round"/><line x1="0" y1="205" x2="400" y2="205" stroke="#6b7080" stroke-width="3"/></svg><p>A source is a big wall of words. <b>Most of it is rock:</b> stuff you don't need for your questions.</p></div>
+  <div class="aibox rv" data-r="2"><div class="t">The AI summary at the top of your search</div>
+    <div>It's fast. It sounds sure. But who wrote it? You can't check it.</div>
+    <div class="line">It can point you to a mine. It can't be the mine.</div></div>
+</section>
+
+<section class="screen" data-step="miner">
+  <div class="minerhead">A miner doesn't haul the whole mountain home.</div>
+  <div id="minerRows"></div>
+  <div class="minerclose rv" data-r="5"><b>Sources are mines. Facts are gems.</b> DIGS helps you skip the rock and carry home only the gems.</div>
+  <div class="tester rv" data-r="6">Today you're my tester. Tell me what works and what's annoying.</div>
+</section>
+
 <section class="screen" data-step="digs"><div id="digsRows"></div>
   <div class="cue">The loop: grab a gem, say it your way, go back for the next one. Aim for 2 to 3 gems for each question.</div></section>
 
@@ -152,17 +182,17 @@ svg.qs{flex:none}
   <div class="strip" id="modelStripG"></div>
   <div class="mgrid"><div><div class="site"><span>DEEP BLUE FIELD NOTES</span><span class="url">deepbluefieldnotes.example.com/octopus</span></div>
     <div class="chunkbox"><h3>Soft and Strange</h3><div class="chunktext" id="modelChunk"></div></div></div>
-    <div><div class="callout c1" data-r="1">“I read one chunk. Which part answers my question?”</div>
-      <div class="callout c2" data-r="2">“‘No bones at all.’ That's special. I highlight just those words: 4 words.”</div>
-      <div class="callout c3" data-r="3">“I almost highlighted 2 whole sentences. But that's 2 gems. One gem at a time.”</div></div></div></section>
+    <div><div class="callout rv c1" data-r="1">“I read one chunk. Which part answers my question?”</div>
+      <div class="callout rv c2" data-r="2">“‘No bones at all.’ That's special. I highlight just those words: 4 words.”</div>
+      <div class="callout rv c3" data-r="3">“I almost highlighted 2 whole sentences. But that's 2 gems. One gem at a time.”</div></div></div></section>
 
 <section class="screen" data-step="modelS">
   <div class="strip" id="modelStripS"></div>
   <div class="mgrid"><div><div class="site"><span>DEEP BLUE FIELD NOTES</span><span class="url">deepbluefieldnotes.example.com/octopus</span></div>
     <div class="chunkbox"><div class="cover"><div class="ct">Source covered</div><div><i>Soft and Strange</i></div></div></div></div>
-    <div><div class="callout c1" data-r="1"><b>Can I say it without looking?</b><br>“An octopus doesn't have a single bone, so its whole body is soft.”</div>
-      <div class="callout c2" data-r="2">“Peek... yes, it means the same thing.” Cover again.</div>
-      <div class="callout c1" data-r="3" style="background:#fff;border:2px solid var(--navy)"><div class="row" style="font-family:Quicksand;font-weight:700"><span id="modelShape"></span>Gem card</div><div style="font-size:24px;margin-top:6px">no bones, soft all over</div><div style="font-size:14px">☑ I said it without looking.</div></div></div></div></section>
+    <div><div class="callout rv c1" data-r="1"><b>Can I say it without looking?</b><br>“An octopus doesn't have a single bone, so its whole body is soft.”</div>
+      <div class="callout rv c2" data-r="2">“Peek... yes, it means the same thing.” Cover again.</div>
+      <div class="callout rv c1" data-r="3" style="background:#fff;border:2px solid var(--navy)"><div class="row" style="font-family:Quicksand;font-weight:700"><span id="modelShape"></span>Gem card</div><div style="font-size:24px;margin-top:6px">no bones, soft all over</div><div style="font-size:14px">☑ I said it without looking.</div></div></div></div></section>
 
 <section class="screen" data-step="turn"><div class="turn">
   <h2>Your turn. Now you dig.</h2>
@@ -194,7 +224,8 @@ svg.qs{flex:none}
   <h4>Session</h4>
   <div class="row">Session # <input id="tSess" type="number" min="1" style="width:60px;font:inherit"> <button class="tbtn" id="tNewSess">Start next session</button></div>
   <h4>Go to step</h4><div id="tSteps"></div>
-  <div id="tRevealWrap"><h4>Model reveals</h4><button class="tbtn" id="tReveal">Next reveal</button> <button class="tbtn" id="tRevealReset">Reset</button> <span id="tRevealState"></span></div>
+  <div id="tRevealWrap"><h4>Reveals</h4><button class="tbtn" id="tReveal">Next reveal</button> <button class="tbtn" id="tRevealReset">Reset</button> <span id="tRevealState"></span>
+    <div class="script" id="tScript" style="margin-top:8px"></div></div>
   <h4>This gem</h4><div class="cur" id="tCur">No gem in progress.</div>
   <div style="margin-top:6px"><button class="tbtn t1" data-tally="first">1 · First try</button><button class="tbtn t2" data-tally="reread">2 · After reread</button><button class="tbtn t3" data-tally="help">3 · With help</button></div>
   <h4>Settings</h4>
@@ -202,9 +233,11 @@ svg.qs{flex:none}
   <h4>This session so far</h4><div class="stat" id="tStats"></div>
   <table id="tLog"></table>
   <h4>Notes</h4>
+  <label>How he researches now (his words)</label><textarea data-note="now"></textarea>
   <label>Hardest letter (his words)</label><textarea data-note="hardest"></textarea>
   <label>Where he stalled</label><textarea data-note="stalled"></textarea>
   <label>What helped</label><textarea data-note="helped"></textarea>
+  <label>Tester feedback (what worked, what was annoying)</label><textarea data-note="tester"></textarea>
   <label>Change for next time</label><textarea data-note="change"></textarea>
   <h4>Export</h4>
   <button class="tbtn" id="tCopy">Copy summary</button><button class="tbtn" id="tPrint">Print summary</button>
@@ -217,24 +250,38 @@ svg.qs{flex:none}
 const SRC = {"site": "Deep Blue Field Notes", "title": "Eight Arms, Many Tricks: Meet the Octopus", "author": "Petra Lind", "date": "March 4, 2025", "link": "deepbluefieldnotes.example.com/octopus", "intro": "There are about 300 kinds of octopus, and they live in every ocean on Earth. Some live in warm, shallow water near coral reefs. Others live deep in the cold, dark sea. The word octopus comes from Greek words that mean \"eight feet.\"", "sections": [{"h": "Soft and Strange", "p": "An octopus has no bones at all. Its only hard part is a sharp beak, shaped a bit like a parrot's. With no bones, an octopus can squeeze through very small gaps. It also has three hearts. Two hearts pump blood through the gills, where the blood picks up oxygen. The third heart pumps blood to the rest of the body. That blood is blue, because it uses copper to carry oxygen. Our blood uses iron, and it is red."}, {"h": "Thinking Arms", "p": "About two-thirds of an octopus's nerve cells are in its arms. That means each arm can do some of its own thinking. The suckers on the arms can touch and taste at the same time. When an arm grabs a crab, it can tell right away that it has found food."}, {"h": "Now You See It", "p": "An octopus can change the colour of its skin in less than a second. Tiny sacs of colour in its skin stretch open or squeeze shut. It can also make its skin bumpy or smooth to match rocks or seaweed. If a hungry fish still finds it, the octopus can squirt a dark cloud of ink and shoot away."}, {"h": "Puzzle Time", "p": "In aquariums, some octopuses have learned to open jars to get the food inside. Near Indonesia, scientists filmed veined octopuses carrying halves of coconut shells across the sea floor. Later, the octopuses put the two halves together and hid inside. The scientists who filmed them called this tool use."}, {"h": "A Short Life", "p": "Most octopuses live for only one or two years. A mother octopus guards her eggs and stops eating. She dies soon after the eggs hatch."}]};
 const LS = "ssr-pilot-octopuses-v1";
 const STEPS = [
-  {id:"start", t:"DIGS Pilot", s:"Octopuses", l:""},
-  {id:"digs", t:"DIGS", s:"Dig for facts, gem by gem.", l:""},
-  {id:"decide", t:"D: Decide what you need to know", s:"", l:"D"},
-  {id:"modelG", t:"Watch me first", s:"G: Grab one gem", l:"G", reveals:3},
-  {id:"modelS", t:"Watch me first", s:"S: Say it your way", l:"S", reveals:3},
-  {id:"turn", t:"Your turn", s:"", l:""},
-  {id:"dig", t:"Dig for gems", s:"", l:"G"},
-  {id:"bag", t:"Your gem bag", s:"", l:""},
+  {id:"start", t:"DIGS Pilot", s:"Octopuses", l:"", b:"Start"},
+  {id:"why", t:"Why is research hard?", s:"", l:"", b:"Why", reveals:2},
+  {id:"miner", t:"Think like a miner", s:"", l:"", b:"Miner", reveals:6},
+  {id:"digs", t:"DIGS", s:"Dig for facts, gem by gem.", l:"", b:"DIGS"},
+  {id:"decide", t:"D: Decide what you need to know", s:"", l:"D", b:"D"},
+  {id:"modelG", t:"Watch me first", s:"G: Grab the gems", l:"G", reveals:3, b:"Model G"},
+  {id:"modelS", t:"Watch me first", s:"S: Say it your way", l:"S", reveals:3, b:"Model S"},
+  {id:"turn", t:"Your turn", s:"", l:"", b:"Your turn"},
+  {id:"dig", t:"Dig for gems", s:"", l:"G", b:"Dig"},
+  {id:"bag", t:"Your gem bag", s:"", l:"", b:"Gem bag"},
 ];
+/* what the tutor says on each reveal (tutor panel only) */
+const SCRIPT = {
+  why:["<b>ASK:</b> “When a teacher says ‘go research it,’ what happens for you?” Log it in <i>How he researches now</i>. Then: “Honestly? That makes sense.”",
+       "“Research is hard. You get a big wall of words, and most of it isn't what you need. And it's tempting to copy, because putting it in your own words is the hard part.”",
+       "“[You said the AI summary.] It's fast, and it sounds sure of itself. But you can't tell where any of it came from. There's no author, so you can't check it. And your teacher can't either. So it can point you to a mine: search words, or a real source. But it can't be the mine. We'll talk about it properly another day.”<br><b>Pushback:</b> “Maybe! But ‘usually’ isn't good enough for a mark.” Then move on. Don't call it fool's gold."],
+  miner:["“Think about a miner. A mine is mostly rock. A miner doesn't haul the whole mountain home.”",
+         "“They know what they're looking for.”","“They check the mine is worth digging, because some shiny stuff is fool's gold.”",
+         "“They chip out one gem at a time.”","“And they make it theirs.”",
+         "“Sources are mines. Facts are gems. DIGS is how you skip the rock and carry home only the gems. It's the fastest way that still counts.”",
+         "“Today you're my tester. Tell me what works and what's annoying. I mean it.”"],
+};
 const QF = {1:"#D7ECF0",2:"#FFF7D6",3:"#F9DEDA"};
 const SHAPE = {1:'<polygon points="50,3 97,50 50,97 3,50"/>',2:'<polygon points="27,5 73,5 97,50 73,95 27,95 3,50"/>',3:'<path d="M50 3 C58 18 88 44 88 62 A38 36 0 1 1 12 62 C12 44 42 18 50 3 Z"/>'};
 const shape = (n,px=46)=>`<svg class="qs" viewBox="0 0 100 100" width="${px}" height="${px}" aria-label="Question ${n}"><g fill="${QF[n]}" stroke="#323C6B" stroke-width="5" stroke-linejoin="round">${SHAPE[n]}</g><text x="50" y="${n==3?64:58}" text-anchor="middle" font-family="Quicksand" font-weight="700" font-size="30" fill="#323C6B">Q${n}</text></svg>`;
 const CHUNKS = [{h:"Opening", p:SRC.intro}, ...SRC.sections];
 const esc = s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const freshReveal = ()=>({why:0,miner:0,modelG:0,modelS:0});
 
 let S = load();
-function fresh(){return {v:1, step:"start", session:1, questions:["","",""], checks:[[0,0,0],[0,0,0],[0,0,0]], gems:[], notes:{}, lock:true, chunk:0, reveal:{modelG:0,modelS:0}, cur:null};}
-function load(){try{const x=JSON.parse(localStorage.getItem(LS)); if(x&&x.v===1) return Object.assign(fresh(),x);}catch(e){} return fresh();}
+function fresh(){return {v:1, step:"start", session:1, questions:["","",""], checks:[[0,0,0],[0,0,0],[0,0,0]], gems:[], notes:{}, lock:true, chunk:0, reveal:freshReveal(), cur:null};}
+function load(){try{const x=JSON.parse(localStorage.getItem(LS)); if(x&&x.v===1){const y=Object.assign(fresh(),x); y.reveal=Object.assign(freshReveal(),x.reveal||{}); return y;}}catch(e){} return fresh();}
 function save(){try{localStorage.setItem(LS, JSON.stringify(S));}catch(e){}}
 function toast(m){const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("show"),1600);}
 const $ = id=>document.getElementById(id);
@@ -245,10 +292,15 @@ function stripHTML(onlyModel){
   if(onlyModel) return [1,2,3].map(n=>`<div class="si${n===1?"":" empty"}">${shape(n)}<span>${n===1?"What is special about an octopus's body?":"&nbsp;"}</span></div>`).join("");
   return [1,2,3].map(n=>{const q=S.questions[n-1].trim(); return `<div class="si${q?"":" empty"}">${shape(n)}<span>${q?esc(q):"Question "+n}</span></div>`;}).join("");
 }
+const LCOL = {D:"#3A7D8C",I:"#B8860B",G:"#E66B5D",S:"#323C6B"};
+function renderMiner(){
+  const rows=[["D","Know what you're looking for."],["I","Check the mine. Watch for fool's gold."],["G","Chip out one gem."],["S","Make it yours."]];
+  $("minerRows").innerHTML=rows.map(([L,t],i)=>`<div class="mrow rv" data-r="${i+1}"><div class="dl" style="background:${LCOL[L]}">${L}</div><div>${t}</div></div>`).join("");
+}
 function renderDigs(){
   const rows=[["D","Decide what you need to know","Turn the topic into 3 questions.","What do I need to find out?","#3A7D8C"],
     ["I","Inspect the source","Find a mine. Check it for fool's gold.","Is this a good mine for my questions?","#B8860B"],
-    ["G","Grab one gem","Read one chunk. Highlight 5 words or fewer.","Which part answers my question?","#E66B5D"],
+    ["G","Grab the gems","One gem at a time. Highlight 5 words or fewer.","Which part answers my question?","#E66B5D"],
     ["S","Say it your way","Cover it. Say it. Peek. Jot.","Can I say it without looking?","#323C6B"]];
   $("digsRows").innerHTML=rows.map(([L,n,d,q,c])=>`<div class="drow${L==="I"?" dim":""}"><div class="dl" style="background:${c}">${L}</div><div><div class="dname">${L}: ${n}</div><div class="big" style="font-size:19px">${d}</div>${L==="I"?'<div class="today">Today your tutor checked the mine for you.</div>':""}</div><div class="dsay">“${q}”</div></div>`).join("");
 }
@@ -257,11 +309,12 @@ function renderDecide(){
   $("qcards").innerHTML=[1,2,3].map(n=>`<div class="qcard"><div style="display:flex;flex-direction:column;align-items:center;gap:4px">${shape(n,80)}</div><div><textarea data-q="${n-1}" placeholder="My question ${n}...">${esc(S.questions[n-1])}</textarea><div class="checks">${labels.map((l,i)=>`<button class="chk${S.checks[n-1][i]?" on":""}" data-c="${n-1},${i}">${S.checks[n-1][i]?"☑":"☐"} ${l}</button>`).join("")}</div></div></div>`).join("");
 }
 function words(text){return text.split(/\s+/).filter(Boolean);}
+function applyReveals(st){document.querySelectorAll(`[data-step="${st}"] [data-r]`).forEach(el=>el.classList.toggle("show",+el.dataset.r<=(S.reveal[st]||0)));}
 function renderModel(){
   const p=SRC.sections[0].p, k=p.indexOf("no bones at all");
   $("modelChunk").innerHTML=esc(p.slice(0,k))+'<span class="hl-later" data-r="2">no bones at all</span>'+esc(p.slice(k+15));
   $("modelStripG").innerHTML=stripHTML(true); $("modelStripS").innerHTML=stripHTML(true); $("modelShape").innerHTML=shape(1,34);
-  ["modelG","modelS"].forEach(st=>{document.querySelectorAll(`[data-step="${st}"] [data-r]`).forEach(el=>el.classList.toggle("show",+el.dataset.r<=S.reveal[st]));});
+  applyReveals("modelG"); applyReveals("modelS");
 }
 function minedIdx(ci){const set=new Set(); S.gems.filter(g=>g.chunk===ci).forEach(g=>{for(let i=g.from;i<=g.to;i++)set.add(i);}); return set;}
 function renderDig(){
@@ -284,7 +337,7 @@ function renderSide(){
     const n=selCount(), q=cur?cur.q:null;
     const cnt = n===0?`<div class="count">Tap the first word of your gem, then the last word.</div>`:
       n<=5?`<div class="count ok">${n} word${n>1?"s":""} highlighted ✓</div>`:`<div class="count warn">${n} words. One gem, 5 words or fewer. Which words matter most?</div>`;
-    el.innerHTML=`<h3>G: Grab one gem</h3><div style="font-style:italic;font-size:18px;color:var(--navy)">“Which part answers my question?”</div>${cnt}
+    el.innerHTML=`<h3>G: Grab the gems</h3><div style="font-style:italic;font-size:18px;color:var(--navy)">“Which part answers my question?”</div>${cnt}
       ${n?`<div style="font-family:Quicksand;font-weight:700;color:var(--navy);margin-top:10px">Which question does it answer?</div><div class="qpick">${[1,2,3].map(k=>`<button data-pick="${k}" class="${q===k?"on":""}">${shape(k,44)}</button>`).join("")}</div>`:""}
       <div class="row" style="margin-top:12px"><button class="btn" id="toSay" ${n&&q?"":"disabled"}>Cover it and say it</button>${n?'<button class="btn alt" id="clearSel">Clear</button>':""}</div>`;
   } else {
@@ -305,9 +358,10 @@ function renderBag(){
 const TL={first:"First try",reread:"After reread",help:"With help"};
 function renderTutor(){
   $("tSess").value=S.session; $("tLock").checked=S.lock;
-  $("tSteps").innerHTML=STEPS.map(s=>`<button class="tbtn${S.step===s.id?" on":""}" data-tstep="${s.id}">${s.id==="modelG"?"Model G":s.id==="modelS"?"Model S":s.t.split(":")[0]}</button>`).join("");
+  $("tSteps").innerHTML=STEPS.map(s=>`<button class="tbtn${S.step===s.id?" on":""}" data-tstep="${s.id}">${s.b}</button>`).join("");
   const st=STEPS.find(x=>x.id===S.step); $("tRevealWrap").style.display=st&&st.reveals?"block":"none";
-  if(st&&st.reveals) $("tRevealState").textContent=`${S.reveal[S.step]} of ${st.reveals} shown`;
+  if(st&&st.reveals){ const r=S.reveal[S.step]||0; $("tRevealState").textContent=`${r} of ${st.reveals} shown`;
+    const sc=SCRIPT[S.step]; $("tScript").hidden=!sc; if(sc) $("tScript").innerHTML=`<b>Say now:</b> ${sc[Math.min(r,sc.length-1)]}`; }
   const c=S.cur;
   $("tCur").innerHTML=!c?"No gem in progress.":`Q${c.q||"?"} · ${esc(CHUNKS[c.chunk].h)} · ${selCount()} words · ${c.phase==="say"?"saying":"grabbing"} · peeks ${c.peeks||0}${c.tally?` · <b>${TL[c.tally]}</b>`:""}`;
   document.querySelectorAll("#tutor [data-tally]").forEach(b=>b.classList.toggle("on",!!(c&&c.tally===b.dataset.tally)));
@@ -320,10 +374,12 @@ function renderTutor(){
 function render(){
   document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("on",s.dataset.step===S.step));
   const st=STEPS.find(x=>x.id===S.step);
-  $("stTitle").textContent=st.t; $("stSub").textContent=st.id==="dig"?(S.cur&&S.cur.phase==="say"?"S: Say it your way":"G: Grab one gem"):st.s;
+  $("stTitle").textContent=st.t; $("stSub").textContent=st.id==="dig"?(S.cur&&S.cur.phase==="say"?"S: Say it your way":"G: Grab the gems"):st.s;
   const L=st.id==="dig"?(S.cur&&S.cur.phase==="say"?"S":"G"):st.l;
   document.querySelectorAll(".letters span").forEach(x=>x.classList.toggle("on",x.dataset.l===L));
   $("startSess").textContent="Session "+S.session;
+  if(S.step==="why") applyReveals("why");
+  if(S.step==="miner"){ renderMiner(); applyReveals("miner"); }
   if(S.step==="digs") renderDigs();
   if(S.step==="decide") renderDecide();
   if(S.step==="modelG"||S.step==="modelS") renderModel();
@@ -333,7 +389,7 @@ function render(){
 
 /* ---------- actions ---------- */
 function go(d){const i=STEPS.findIndex(s=>s.id===S.step); const j=Math.max(0,Math.min(STEPS.length-1,i+d)); S.step=STEPS[j].id; save(); render();}
-function reveal(){const st=STEPS.find(x=>x.id===S.step); if(!st.reveals) return; if(S.reveal[S.step]<st.reveals){S.reveal[S.step]++; save(); renderModel(); renderTutor();}}
+function reveal(){const st=STEPS.find(x=>x.id===S.step); if(!st.reveals) return; const r=S.reveal[S.step]||0; if(r<st.reveals){S.reveal[S.step]=r+1; save(); render();}}
 function tally(k){if(!S.cur||S.cur.phase!=="say"){toast("No gem being said right now"); return;} S.cur.tally=k; save(); render(); toast("Logged: "+TL[k]);}
 let lastTap=0;
 document.addEventListener("click",e=>{
@@ -363,10 +419,10 @@ document.addEventListener("click",e=>{
   if(t.dataset.tally){ tally(t.dataset.tally); return; }
   if(t.dataset.del){ if(confirm("Delete this gem?")){ S.gems=S.gems.filter(g=>g.id!=+t.dataset.del); save(); render(); } return; }
   if(t.id==="tReveal"){ reveal(); return; }
-  if(t.id==="tRevealReset"){ S.reveal[S.step]=0; save(); renderModel(); renderTutor(); return; }
+  if(t.id==="tRevealReset"){ S.reveal[S.step]=0; save(); render(); return; }
   if(t.id==="tClose"){ $("tutor").classList.remove("open"); return; }
   if(t.id==="tbtnOpen"){ if(!e.altKey) return; $("tutor").classList.add("open"); renderTutor(); return; }
-  if(t.id==="tNewSess"){ if(confirm("Start session "+(S.session+1)+"? His questions and gem bag stay.")){ S.session++; S.cur=null; S.reveal={modelG:0,modelS:0}; S.step="start"; save(); render(); } return; }
+  if(t.id==="tNewSess"){ if(confirm("Start session "+(S.session+1)+"? His questions and gem bag stay.")){ S.session++; S.cur=null; S.reveal=freshReveal(); S.step="start"; save(); render(); } return; }
   if(t.id==="tCopy"){ navigator.clipboard.writeText(summaryText()).then(()=>toast("Summary copied"),()=>toast("Copy blocked: use Print")); return; }
   if(t.id==="tPrint"){ $("printout").innerHTML=summaryHTML(); window.print(); return; }
   if(t.id==="tReset"){ if(confirm("Clear everything (questions, gems, notes) on this computer?")){ S=fresh(); save(); render(); } return; }
@@ -392,9 +448,9 @@ document.addEventListener("keydown",e=>{
 /* summary */
 function summaryRows(){return sessGems().map(g=>[g.q,g.text,g.hl,CHUNKS[g.chunk].h,g.words,g.peeks||0,g.tally?TL[g.tally]:"not logged"]);}
 function summaryText(){const gs=sessGems(),n=S.notes[S.session]||{},c=k=>gs.filter(g=>g.tally===k).length;
-  return [`DIGS pilot, session ${S.session} (octopuses)`,`Said it without looking: first try ${c("first")} / after reread ${c("reread")} / with help ${c("help")}`,`Gems: ${gs.length}, over 5 words: ${gs.filter(g=>g.words>5).length}, peeks: ${gs.reduce((a,g)=>a+(g.peeks||0),0)}`,
+  return [`DIGS pilot, session ${S.session} (octopuses)`,`How he researches now: ${n.now||""}`,`Said it without looking: first try ${c("first")} / after reread ${c("reread")} / with help ${c("help")}`,`Gems: ${gs.length}, over 5 words: ${gs.filter(g=>g.words>5).length}, peeks: ${gs.reduce((a,g)=>a+(g.peeks||0),0)}`,
    `His questions: ${S.questions.map((q,i)=>`Q${i+1} ${q||"-"}`).join(" | ")}`,"",...summaryRows().map(r=>`Q${r[0]} | ${r[1]} | highlighted: "${r[2]}" (${r[4]} words) | ${r[3]} | peeks ${r[5]} | ${r[6]}`),"",
-   `Hardest letter: ${n.hardest||""}`,`Where he stalled: ${n.stalled||""}`,`What helped: ${n.helped||""}`,`Change for next time: ${n.change||""}`].join("\n");}
+   `Hardest letter: ${n.hardest||""}`,`Where he stalled: ${n.stalled||""}`,`What helped: ${n.helped||""}`,`Tester feedback: ${n.tester||""}`,`Change for next time: ${n.change||""}`].join("\n");}
 function summaryHTML(){return "<h2>DIGS pilot, session "+S.session+"</h2><pre style='white-space:pre-wrap;font-family:inherit'>"+esc(summaryText())+"</pre>";}
 
 render();
